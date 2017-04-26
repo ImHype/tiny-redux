@@ -10,5 +10,13 @@
     "test": "echo \"test\""
   },
   "author": "",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ImHype/tiny-redux.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ImHype/tiny-redux/issues"
+  },
+  "homepage": "https://github.com/ImHype/tiny-redux#readme"
 }
