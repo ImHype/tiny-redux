@@ -3,10 +3,10 @@ function applyMiddleware(middlewares) {
     
     return (createStore) => (reducer, preState) => {
         const store = createStore(reducer, preState);
-        let dispatch = store.dispatch;
-        middlewares.forEach((middleware) => {
-            dispatch = middleware(store)(dispatch)
-        });
+
+        let dispatch = middlewares.reduce((dispatch, middleware) => {
+            return middleware(store)(dispatch);
+        }, store.dispatch);
 
         return Object.assign(store, {
             dispatch
