@@ -1,0 +1,14 @@
+{
+  "name": "tiny-redux",
+  "version": "0.1.0",
+  "description": "tiny-redux",
+  "main": "src/index",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "test": "echo \"test\""
+  },
+  "author": "",
+  "license": "MIT"
+}
